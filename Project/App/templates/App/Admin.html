@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Board</title>
+</head>
+<body>
+Admins Only
+<nav>
+    <ul>
+        <li>
+            <form class="LogOutLink" action="{% url 'LogOut'%}" method="POST">
+                {% csrf_token %}
+                <button type="submit">LogOut</button>
+            </form>
+        </li>
+    </ul>
+</nav>
+
+</body>
+</html>
